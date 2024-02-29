@@ -12,6 +12,7 @@ Instrucciones
 
    - En el terminal: `echo 'export MMDETECTION=$PWD/mmdetection' >> ~/.bashrc`
    - En el terminal: `echo 'export PYTHONPATH="$PYTHONPATH:%PWD/SurgLatentGraph"' >> ~/.bashrc`
+   - En el terminal: `source ~/.bashrc`
 
 5. Crear y activar el nuevo environment
 
