@@ -1,0 +1,15 @@
+services:
+  app:
+    build: .
+    image: anaconda3-surg-latent-graph
+    develop:
+      watch:
+        - action: sync
+          path: ./mmdetection
+          target: /app/mmdetection
+        - action: sync
+          path: ./SurgLatentGraph
+          target: /app/SurgLatentGraph
+            
+# volumes:
+#   - ./data:/app/data

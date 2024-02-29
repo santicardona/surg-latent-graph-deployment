@@ -1,0 +1,3 @@
+# Ignore weights in SurgLatentGraph
+# SurgLatentGraph/weights/*.pth
+SurgLatentGraph/weights/*.zip
