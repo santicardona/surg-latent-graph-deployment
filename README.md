@@ -29,3 +29,22 @@ Instrucciones
    mim install mmdet==3.2.0
    pip install torchmetrics scikit-learn prettytable imagesize networkx opencv-python yapf==0.40.1
    ```
+
+7. Crear los datos. Corre estos comandos uno tras otro
+   ```bash
+   cd SurgLatentGraph && mkdir -p data/mmdet_datasets && cd data/mmdet_datasets
+   wget https://s3.unistra.fr/camma_public/datasets/endoscapes/endoscapes.zip 
+   unzip encoscapes.zip && rm endoscpaes.zip && cd ../..
+   ```
+
+8. Selecciona el dataset
+   ```bash
+   cd configs/models
+   ./select_dataset.sh endoscapes
+   cd ../..
+   ```
+
+9. Intenta correr un training
+   ```bash
+   mim train mmdet configs/models/faster_rcnn/lg_faster_rcnn.py
+   ```
