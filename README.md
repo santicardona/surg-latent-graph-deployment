@@ -60,8 +60,8 @@ Instrucciones
 
 4. Environment variables. Es importante desde acá no cerrar el terminal en el que estás trabajando.
 
-   - En el CMD: `set MMDETECTION=%cd%/mmdetection`
-   - En el CMD: `set PYTHONPATH=%PYTHONPATH%;%cd%/SurgLatentGraph`
+   - En el CMD: `set MMDETECTION=%cd%\mmdetection`
+   - En el CMD: `set PYTHONPATH=%PYTHONPATH%;%cd%\SurgLatentGraph`
 
 5. Crear y activar el nuevo environment
 
